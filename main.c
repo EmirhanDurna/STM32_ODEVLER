@@ -109,8 +109,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_GPIO_WritePin(trs_led_GPIO_Port, trs_led_Pin, SET);
-  HAL_GPIO_WritePin(trs_7seg_GPIO_Port, trs_7seg_Pin, RESET);
+  HAL_GPIO_WritePin(trs_led_GPIO_Port, trs_led_Pin, RESET);
+  HAL_GPIO_WritePin(trs_7seg_GPIO_Port, trs_7seg_Pin, SET);
   int sayac=0;
   int ilk_durum=1;
   int ilk_durum2 = 1;
@@ -213,3 +213,4 @@ void assert_failed(uint8_t *file, uint32_t line)
 {
 }
 #endif /* USE_FULL_ASSERT */
+
